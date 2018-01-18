@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>$ start</title>
+    <link rel="icon" href="syn1.png" sizes="16x16 32x32 48x48 150x150" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery.shuffle-images.js"></script>
+</head>
+
+<script>
+      $(document).ready(function(){
+       $(".shuffle-me").shuffleImages({
+         trigger: "imageHover",
+         target: "#images > img",
+         triggerTarget: $(".container"),
+         hoverTrigger: 3500,
+         scrollTrigger: 100,
+         mouseMoveTrigger: 200,
+       });
+        });
+        
+</script>
+
+<body>
+    <div id="search">
+        <input id="search-field" type="text" name="search-field" onkeypress="return search(event)"/>
+    </div>
+
+    <div class="container">
+        <div class="title">ファックライフ</div>
+        <div class="info">
+            <div id="clock"></div>
+            <div class="weather-container">
+                <div class="row">
+                    <div id="weather-description"class="inline"></div>
+                    <div class="inline">|</div>
+                    <div id="temp" class="inline"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bookmark-container">
+            <div class="bookmark-set">
+                <div class="bookmark-title">sch</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="http://mail.google.com/mail/u/1/">mail</a>
+                    <a class="bookmark" href="https://sites.google.com/a/bisvietnam.net/bulletin/daily-bulletin">bulletin</a>
+                    <a class="bookmark" href="http://drive.google.com/drive/u/1/my-drive">drive</a>
+                    <a class="bookmark" href="https://classroom.google.com/u/1/h">classroom</a>
+                    <a class="bookmark" href="https://khanacademy.org">khan</a>
+                    <a class="bookmark" href="http://codefights.com/home">codefights</a>
+                    <a class="bookmark" href="http://artofproblemsolving.com">aops</a>
+                    <a class="bookmark" href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html">hyperphysics</a>
+                    <a class="bookmark" href="https://quizlet.com/latest">quizlet</a>
+                </div>
+            </div>
+            <div class="bookmark-set">
+            <div class="bookmark-title">per</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://mail.google.com">mail</a>
+                    <a class="bookmark" href="https:// outlook.live.com/owa/#wa=wsignin1.0">outlook</a>
+                    <a class="bookmark" href="https://drive.google.com/drive/u/0/">drive</a>
+                    <a class="bookmark" href="https://dropbox.com">dropbox</a>
+                    <a class="bookmark" href="https://keep.google.com">keep</a>
+                    <a class="bookmark" href="https://www.wattpad.com/library">library</a>
+                    <a class="bookmark" href="https://www.youtube.com">youtube</a>
+                    <a class="bookmark" href="https://www.youtube.com/feed/subscriptions">subscriptions</a>
+                    <a class="bookmark" href="http://tumblr.com/dashboard">dashboard</a>
+                    <a class="bookmark" href="https://innerspaceboy.tumblr.com">blog</a>
+                    <a class="bookmark" href="https://www.deviantart.com/notifications/">dv watch</a>
+                    <a class="bookmark" href="https://www.messenger.com">messenger</a>
+                    <a class="bookmark" href="https://letterboxd.com/">letterboxd</a>
+                </div>
+            </div>
+            <div class="bookmark-set">
+                <div class="bookmark-title">red</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://reddit.com">frontpage</a>
+                    <a class="bookmark" href="https://reddit.com/r/windows10">w10</a>
+                    <a class="bookmark" href="https://www.reddit.com/r/PrequelMemes/">prequel</a>
+                    <a class="bookmark" href="https://www.reddit.com/r/firefox/">firefox</a>
+                    <a class="bookmark" href="https://www.reddit.com/r/opiates/">opi</a>
+                    <a class="bookmark" href="https://www.reddit.com/r/desktops/">desktops</a>
+                    <a class="bookmark" href="https://www.reddit.com/r/unixporn/">unixporn</a>
+                    <a class="bookmark" href="https://www.reddit.com/r/startpages/">startpages</a>
+                    <a class="bookmark" href="https://www.reddit.com/r/firefoxCSS/">css</a>
+                    <a class="bookmark" href="https://www.reddit.com/r/terraria/">terraria</a>
+
+
+                </div>
+            </div>
+            <div class="bookmark-set">
+                <div class="bookmark-title">tor</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="http://thepiratebay.org">pirate bay</a>
+                    <a class="bookmark" href="https://katcr.co/">katcr</a>
+                    <a class="bookmark" href="https://rarbg.to/torrents.php">rarbg</a>
+                    <a class="bookmark" href="http://en.metal-tracker.com/">metal tracker</a>
+                    <a class="bookmark" href="https://torrents.me">tor.me</a>
+                    <a class="bookmark" href="https://zooqle.com/">zooqle</a>
+                    <a class="bookmark" href="https://1337x.to/home/">1337x</a>
+                    <a class="bookmark" href="https://rutracker.org/">rutracker</a>
+                    <a class="bookmark" href="https://skytorrent.in/">skytor</a>
+                    <a class="bookmark" href="https://www.digbt.org/">digbt</a>
+                </div>
+            </div>
+              <div class="bookmark-set">
+                <div class="bookmark-title">res</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="http://ptable.com/">pr table</a>
+                    <a class="bookmark" href="https://www.desmos.com/calculator">graph calc</a>
+                    <a class="bookmark" href="http://www.mathpapa.com/algebra-calculator.html">algebra calc</a>
+                    <a class="bookmark" href="https://logic.ly/demo/">logic ly</a>
+                    <a class="bookmark" href="http://la-conjugaison.nouvelobs.com/">conjugaison</a>
+                    <a class="bookmark" href="https://alpha.wallhaven.cc">wallhaven</a>
+                    <a class="bookmark" href="https://unsplash.com">unsplash</a>
+                    <a class="bookmark" href="https://www.independent.co.uk/">independent</a>
+                    <a class="bookmark" href="https://www.economist.com">economist</a>
+                    <a class="bookmark" href="https://www.lifehacker.com">lifehacker</a>
+                    <a class="bookmark" href="https://startpages.github.io/">startpage</a>
+                    <a class="bookmark" href="https://weboas.is/">weboasis</a>
+                </div>
+            </div>
+        </div>
+        <div class="note">
+	        <div class="notepad-container">
+	        	<div class="notepad" id="scratchpad" contenteditable=true>
+	    		</div>
+	    	</div>
+            <div class="notepad-container">
+    	    	<div class="shuffle-me">
+                    <div id="images">
+    	        	  <img src="images/b.gif"></img>
+                      <img src="images/c.gif"></img>
+                      <img src="images/d.gif"></img>
+                      <img src="images/e.gif"></img>
+                      <img src="images/f.gif"></img>
+                      <img src="images/g.gif"></img>
+                      <img src="images/i.gif"></img>
+                      <img src="images/m.gif"></img>
+                      <img src="images/p.gif"></img>
+                      <img src="images/q.gif"></img>
+                      <img src="images/r.gif"></img>
+                      <img src="images/s.gif"></img>
+                      <img src="images/t.gif"></img>
+                      <img src="images/u.gif"></img>
+                      <img src="images/v.gif"></img>
+                      <img src="images/z.gif"></img>
+                    </div>
+    	    	</div>
+            </div>
+	    </div>
+    </div>
+
+    <script type="text/javascript">
+        var scratch = document.getElementById('scratchpad');
+        scratch.addEventListener('keyup', function() {
+            var content = scratch.innerHTML.trim();
+            localStorage.setItem('scratchpad', content);
+        });
+
+        var content = localStorage.getItem('scratchpad');
+        if(content == '' || content == null) {
+            content = 'Write some notes here...';
+        }
+        scratch.innerHTML = content;
+    </script>
+
+    <script>
+        // Search on enter key event
+        function search(e) {
+            if (e.keyCode == 13) {
+                var val = document.getElementById("search-field").value;
+                window.open("https://www.duckduckgo.com/?q=" + val);
+            }
+        }
+        // Get current time and format
+        function getTime() {
+            let date = new Date(),
+                min = date.getMinutes(),
+                sec = date.getSeconds(),
+                hour = date.getHours();
+
+            return "" + 
+                (hour < 10 ? ("0" + hour) : hour) + ":" + 
+                (min < 10 ? ("0" + min) : min) + ":" + 
+                (sec < 10 ? ("0" + sec) : sec);
+        }
+
+        window.onload = () => {
+            let xhr = new XMLHttpRequest();
+            // Request to open weather map
+            xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=7839562&appid=832719dabc0aaac91c4a93c2a64e12d4&units=metric');
+            xhr.onload = () => {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        let json = JSON.parse(xhr.responseText);
+                        console.log(json);
+                        document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + " °C";
+                        document.getElementById("weather-description").innerHTML = json.weather[0].description;
+                    } else {
+                        console.log('error msg: ' + xhr.status);
+                    }
+                }
+            }
+            xhr.send();
+            // Set up the clock
+            document.getElementById("clock").innerHTML = getTime();
+            // Set clock interval to tick clock
+            setInterval( () => {
+                document.getElementById("clock").innerHTML = getTime();
+            },100);
+        }
+
+        document.addEventListener("keydown", event => {
+            if (event.keyCode == 16) {          // Spacebar code to open search
+                document.getElementById('search').style.display = 'flex';
+                document.getElementById('search-field').focus();
+                document.getElementById('images').style.display = 'none';
+            } else if (event.keyCode == 27) {   // Esc to close search
+                document.getElementById('search-field').value = '';
+                document.getElementById('search-field').blur();
+                document.getElementById('search').style.display = 'none';
+                document.getElementById('images').style.display = 'inline';
+            }
+        });
+    </script>
+</body>
+</html>
