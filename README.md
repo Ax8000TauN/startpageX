@@ -1,2 +1,2 @@
 # startpageX
-# just random chitchat yo
+# just a startpage
