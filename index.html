@@ -8,7 +8,7 @@
     <title>$ start</title>
     <link rel="icon" href="syn1.png" sizes="16x16 32x32 48x48 150x150" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="https://raw.githubusercontent.com/Ax8000TauN/startpageX/master/jquery.shuffle-images.js"></script>
 </head>
 
@@ -194,7 +194,7 @@
         window.onload = () => {
             let xhr = new XMLHttpRequest();
             // Request to open weather map
-            xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=7839562&appid=832719dabc0aaac91c4a93c2a64e12d4&units=metric');
+            xhr.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=7839562&appid=832719dabc0aaac91c4a93c2a64e12d4&units=metric');
             xhr.onload = () => {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {
